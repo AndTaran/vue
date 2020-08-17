@@ -49,7 +49,7 @@
             <v-card-actions>
               <v-spacer></v-spacer>
               <v-btn :to="'/ad/' + ad.id">Open</v-btn>
-              <v-btn raised class="primary">Buy</v-btn>
+              <app-buy-modal :ad="ad"></app-buy-modal>
             </v-card-actions>
           </v-card>
         </v-flex>
@@ -60,7 +60,7 @@
   <div v-else>
     <v-container>
       <v-layout row>
-        <v-flex xs12 class="text-md-center">
+        <v-flex xs12 class="text-center">
           <v-progress-circular
           :size="100"
           :width="4"

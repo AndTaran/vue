@@ -3,6 +3,7 @@ import App from './App.vue'
 import vuetify from './plugins/vuetify';
 import router from './router'
 import store from './store'
+import BuyModalComponents from '@/components/Shared/BuyModal'
 import * as fb from 'firebase/app'
 import 'firebase/auth';        // for authentication
 import 'firebase/storage';     // for storage
@@ -11,6 +12,7 @@ import 'firebase/firestore';   // for cloud firestore
 import 'firebase/messaging';   // for cloud messaging
 import 'firebase/functions';   // for cloud functions
 
+Vue.component('app-buy-modal', BuyModalComponents)
 
 Vue.config.productionTip = false
 

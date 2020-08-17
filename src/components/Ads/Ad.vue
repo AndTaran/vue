@@ -14,10 +14,10 @@
                <v-card-actions>
                   <v-spacer></v-spacer>
                   <addEditAdModal :ad="ad" v-if="isOwner"></addEditAdModal>
-                  <v-btn class="success" outlined tile>Buy</v-btn>
+                  <app-buy-modal :ad="ad"></app-buy-modal>
                </v-card-actions>
             </v-card>
-            <div v-else class="text-xs-center">
+            <div v-else class="text-center">
                <v-progress-circular
                :size="100"
                :width="4"
@@ -44,7 +44,7 @@ export default {
          return this.$store.getters.loading
       },
       isOwner () {
-         return this.ad.ownerId === this.getters.user.id
+         return this.ad.ownerId === this.$store.getters.user.id
       }
    },
    components: {
