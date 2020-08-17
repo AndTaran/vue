@@ -1,7 +1,7 @@
 <template>
   <v-app>
       <v-navigation-drawer
-      class="deep-purple accent-4"
+      class="deep-purple"
       app
       temporary
       dark
@@ -42,7 +42,7 @@
 
     <v-app-bar
     app
-    color="deep-purple accent-4"
+    color="deep-purple"
     dense
     dark
     >

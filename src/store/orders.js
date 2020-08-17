@@ -1,7 +1,4 @@
 import * as fb from 'firebase/app'
-import 'firebase/auth'
-import 'firebase/firestore'
-import 'firebase/database'
 
 class Order {
    constructor (name, phone, adId, done = false, id = null) {

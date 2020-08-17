@@ -6,7 +6,7 @@
       <template v-slot:activator="{ on }">
          <v-btn 
          v-on="on"
-         class="primary ml-2"
+         class="deep-purple ml-2"
          outlined 
          tile 
          >Buy
